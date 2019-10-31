@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_370sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:background="@drawable/edit_text"
+        android:padding="@dimen/_2sdp"
+        android:textIsSelectable="true"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintBottom_toTopOf="@+id/multiple_actions_down"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.26999998" />
+
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu xmlns:fab="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/multiple_actions_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        fab:fab_addButtonColorNormal="@color/colorAccent"
+        fab:fab_addButtonColorPressed="#c60055"
+        fab:fab_addButtonPlusIconColor="@color/white"
+        fab:fab_addButtonSize="normal"
+        fab:fab_expandDirection="left"
+        fab:layout_constraintBottom_toBottomOf="parent"
+        fab:layout_constraintEnd_toEndOf="parent"
+        fab:layout_constraintHorizontal_bias="1.0"
+        fab:layout_constraintStart_toStartOf="parent"
+        fab:layout_constraintTop_toTopOf="parent"
+        fab:layout_constraintVertical_bias="0.887">
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/button_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#4dd0e1"
+            fab:fab_colorPressed="#88ffff"
+            fab:fab_icon="@drawable/round_share_white_48dp"
+            fab:fab_size="mini"
+            fab:fab_title="Share" />
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/button_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#4dd0e1"
+            fab:fab_colorPressed="#88ffff"
+            fab:fab_icon="@drawable/round_file_copy_white_48dp"
+            fab:fab_size="mini"
+            fab:fab_title="Copy" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#4dd0e1"
+            fab:fab_colorPressed="#88ffff"
+            fab:fab_icon="@drawable/round_save_white_48dp"
+            fab:fab_size="mini"
+            fab:fab_title="Save" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#4dd0e1"
+            fab:fab_colorPressed="#88ffff"
+            fab:fab_icon="@drawable/round_delete_forever_white_48dp"
+            fab:fab_size="mini"
+            fab:fab_title="Delete" />
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+</androidx.constraintlayout.widget.ConstraintLayout>

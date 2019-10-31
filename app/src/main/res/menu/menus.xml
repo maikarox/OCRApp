@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_rate"
+        android:icon="@drawable/round_star_rate_white_48dp"
+        android:title="@string/rateInstore" />
+
+    <item
+        android:id="@+id/menu_share"
+        android:icon="@drawable/round_share_white_48dp"
+        android:title="@string/shareText" />
+
+    <item
+        android:id="@+id/menu_pp"
+        android:icon="@drawable/round_business_white_48dp"
+        android:title="@string/privacyPolicy" />
+
+</menu>
